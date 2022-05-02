@@ -1,0 +1,71 @@
+const getFullName = document.querySelector("#fullName");
+const getEmailAddress = document.querySelector("#emailAddress");
+const getMyButton = document.querySelector("#myButton");
+const form = document.querySelector("form");
+const getCityState = document.querySelector("#cityState");
+const getZipCode = document.querySelector("#zipCode");
+const getPhoneNumber = document.querySelector("#phoneNumber");
+const getLinkedIn = document.querySelector("#linkedIn");
+const getFacebook = document.querySelector("#facebook");
+const getTwitter = document.querySelector("#twitter");
+const getJobTitle = document.querySelector("#jobTitle");
+const getObjectiveOne = document.querySelector("#objectiveOne");
+const getObjectiveTwo = document.querySelector("#objectiveTwo");
+const getObjectiveThree = document.querySelector("#objectiveThree");
+const getCustServSkills = document.querySelector("#custServSkills");
+const getTechSkills = document.querySelector("#techSkills");
+const getWritingSkills = document.querySelector("#writingSkills");
+const getEducation = document.querySelector("#education");
+const getWorkStartDateOne = document.querySelector("#workStartDateOne");
+const getWorkEndDateOne = document.querySelector("#workEndDateOne");
+const getWorkStartDateTwo = document.querySelector("#workStartDateTwo");
+const getWorkEndDateTwo = document.querySelector("#workEndDateTwo");
+const getWorkStartDateThree = document.querySelector("#workStartDateThree");
+const getWorkEndDateThree = document.querySelector("#workEndDateThree");
+const getExperienceOne = document.querySelector("#experienceOne");
+const getExperienceTwo = document.querySelector("#experienceTwo");
+const getExperienceThree = document.querySelector("#experienceThree");
+const getReferenceOne = document.querySelector("#referenceOne");
+const getReferenceTwo = document.querySelector("#referenceTwo");
+const getReferenceThree = document.querySelector("#referenceThree");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+});
+
+getMyButton.addEventListener("click", function() {
+    sessionStorage.setItem("ssName", getFullName.value);
+    sessionStorage.setItem("ssEmailAddress", getEmailAddress.value);
+    sessionStorage.setItem("ssCityState", getCityState.value);
+    sessionStorage.setItem("ssZipCode", getZipCode.value);
+    sessionStorage.setItem("ssPhoneNumber", getPhoneNumber.value);
+    sessionStorage.setItem("ssLinkedIn", getLinkedIn.value);
+    sessionStorage.setItem("ssFacebook", getFacebook.value);
+    sessionStorage.setItem("ssTwitter", getTwitter.value);
+    sessionStorage.setItem("ssJobTitle", getJobTitle.value);
+    sessionStorage.setItem("ssObjectiveOne", getObjectiveOne.value);
+    sessionStorage.setItem("ssObjectiveTwo", getObjectiveTwo.value);
+    sessionStorage.setItem("ssObjectiveThree", getObjectiveThree.value);
+    sessionStorage.setItem("ssObjectiveThree", getObjectiveThree.value);
+    sessionStorage.setItem("ssObjectiveThree", getObjectiveThree.value);
+    sessionStorage.setItem("ssCustServSkills", getCustServSkills.value);
+    sessionStorage.setItem("ssTechSkills", getTechSkills.value);
+    sessionStorage.setItem("ssWritingSkills", getWritingSkills.value);
+    sessionStorage.setItem("ssEducation", getEducation.value);
+    sessionStorage.setItem("ssWorkStartDateOne", getWorkStartDateOne.value);
+    sessionStorage.setItem("ssWorkEndDateOne", getWorkEndDateOne.value);
+    sessionStorage.setItem("ssWorkStartDateTwo", getWorkStartDateTwo.value);
+    sessionStorage.setItem("ssWorkEndDateTwo", getWorkEndDateTwo.value);
+    sessionStorage.setItem("ssWorkStartDateThree", getWorkStartDateThree.value);
+    sessionStorage.setItem("ssWorkEndDateThree", getWorkEndDateThree.value);
+    sessionStorage.setItem("ssExperienceOne", getExperienceOne.value);
+    sessionStorage.setItem("ssExperienceTwo", getExperienceTwo.value);
+    sessionStorage.setItem("ssExperienceThree", getExperienceThree.value);
+    sessionStorage.setItem("ssReferenceOne", getReferenceOne.value);
+    sessionStorage.setItem("ssReferenceTwo", getReferenceTwo.value);
+    sessionStorage.setItem("ssReferenceThree", getReferenceThree.value);
+});
+
+getMyButton.addEventListener("click", function() {
+    window.location = "resume.html";
+});

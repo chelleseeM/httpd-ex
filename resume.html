@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+<title>CSC-227 Final Project_Resume Builder</title>
+<style>
+body {
+  font-size:12pt;
+  font-family:verdana;
+  background-color: lightpink;
+}
+
+div#nameBanner {
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    font-weight: bold;
+}
+
+div#jobTitleBanner {
+    font-size: 30px;
+    color: gray;
+    margin: 20px;
+    font-weight: bold;
+}
+
+#skillsBanner {
+    font-size: 30px;
+    color: gray;
+    margin: 20px;
+}
+
+#educationBanner {
+    font-size: 30px;
+    color: gray;
+    margin: 20px;
+}
+
+div#perInfo {
+    font-size: 15px;
+    margin: 20px;
+}
+
+div#objectivesBanner {
+    font-size: 15px;
+    margin: 20px;
+}
+
+div#edBanner {
+    font-size: 15px;
+    margin: 20px;
+}
+
+#experienceBanner {
+    font-size: 30px;
+    color: gray;
+    margin: 20px;
+}
+
+div#expOneBanner {
+    font-size: 15px;
+    margin: 20px;
+}
+
+div#expTwoBanner {
+    font-size: 15px;
+    margin: 20px;
+}
+
+div#expThreeBanner {
+    font-size: 15px;
+    margin: 20px;
+}
+
+#referencesBanner {
+    font-size: 30px;
+    color: gray;
+    margin: 20px;
+}
+
+div#refsBanner {
+    font-size: 15px;
+    margin: 20px;
+}
+
+div#theLeftOne {
+  clear:both;
+  width:15%;
+  float:left;
+  margin: 20px;
+}
+
+div#theRightOne {
+  width:83%;
+  float:right;
+}
+
+div#theLeftTwo {
+  clear:both;
+  width:15%;
+  float:left;
+  margin: 20px;
+}
+
+div#theRightTwo {
+  width:83%;
+  float:right;
+}
+
+div#theLeftThree {
+  clear:both;
+  width:15%;
+  float:left;
+  margin: 20px;
+}
+
+div#theRightThree {
+  width:83%;
+  float:right;
+}
+</style>
+</head>
+<body>
+<div id="nameBanner">
+  <span id="full-name">
+    <script>
+      document.getElementById("full-name").innerHTML = sessionStorage.getItem("ssName");
+    </script>
+  </span>
+</div>
+<div id="perInfo">
+  <p id="personal-info">
+    <script>
+      document.write(sessionStorage.getItem("ssCityState") + "  " + sessionStorage.getItem("ssZipCode") + "  ***  " + sessionStorage.getItem("ssPhoneNumber") + "  ***  " + sessionStorage.getItem("ssEmailAddress"));      
+    </script>
+  </p>
+  <p>
+    <script>
+      document.write(sessionStorage.getItem("ssLinkedIn") + "  ***  " + sessionStorage.getItem("ssTwitter") + " *** " + sessionStorage.getItem("ssFacebook"));      
+    </script>
+  </p>
+  </div>
+  <hr>
+<div id="jobTitleBanner">
+  <span id="job-name">
+    <script>
+      document.getElementById("job-name").innerHTML = sessionStorage.getItem("ssJobTitle");
+    </script>
+  </span>
+</div>
+<div id="objectivesBanner">
+  <span id="objectives">
+    <script>
+      document.write("  ***  " + sessionStorage.getItem("ssObjectiveOne"));      
+    </script>
+  </p>
+  <p>
+    <script>
+      document.write("  ***  " + sessionStorage.getItem("ssObjectiveTwo"));     
+    </script>
+  </p>
+  <p>
+    <script>
+      document.write("  ***  " + sessionStorage.getItem("ssObjectiveThree"));     
+    </script>
+  </p>
+  </span>
+</div>
+<hr>
+<p id="educationBanner">
+  <span id="educationBan">
+    <b>Education</b>
+  </span>
+</p>
+<div id="edBanner">
+  <span id="edBanner">
+    <script>
+      document.write(sessionStorage.getItem("ssEducation"));      
+    </script>
+  </p>
+<hr>
+<p id="experienceBanner">
+    <span id="experience">
+      <b>Experience</b>
+    </span>
+  </p>
+<div id="expOneBanner">
+  <span id="expOneBanner">
+    <script>
+      document.write(sessionStorage.getItem("ssWorkStartDateOne") + " to " + sessionStorage.getItem("ssWorkEndDateOne"));
+    </script>
+    <br>
+    <br>
+    <script>
+      document.write(sessionStorage.getItem("ssExperienceOne"));
+    </script>
+  </span>
+</div>
+<br>
+<div id="expTwoBanner">
+  <span id="expTwoBanner">
+    <script>
+      document.write(sessionStorage.getItem("ssWorkStartDateTwo") + " to " + sessionStorage.getItem("ssWorkEndDateTwo"));
+    </script>
+    <br>
+    <br>
+    <script>
+      document.write(sessionStorage.getItem("ssExperienceTwo"));
+    </script>
+  </span>
+</div>
+<br>
+<div id="expThreeBanner">
+  <span id="expThreeBanner">
+    <script>
+      document.write(sessionStorage.getItem("ssWorkStartDateThree") + " to " + sessionStorage.getItem("ssWorkEndDateThree"));
+    </script>
+    <br>
+    <br>
+    <script>
+      document.write(sessionStorage.getItem("ssExperienceThree"));
+    </script>
+  </span>
+</div>
+<hr>
+<p id="referencesBanner">
+  <span id="references">
+    <b>References</b>
+  </span>
+</p>
+<div id="refsBanner">
+  <span id="refs">
+    <script>
+      document.write("  ***  " + sessionStorage.getItem("ssReferenceOne"));      
+    </script>
+  </p>
+  <br>
+  <p>
+    <script>
+      document.write("  ***  " + sessionStorage.getItem("ssReferenceTwo"));     
+    </script>
+  </p>
+  <br>
+  <p>
+    <script>
+      document.write("  ***  " + sessionStorage.getItem("ssReferenceThree"));     
+    </script>
+  </p>
+  </span>
+</div>
+<hr>
+<p id="skillsBanner">
+  <span id="skills">
+    <b>Skills Toolbox</b>
+  </span>
+</p>
+<div id="theLeftOne">
+  <span id="custServSkills">
+    Customer Service Skills:
+  </span>
+</div>
+<div id="theRightOne">
+  <span>
+    <script>
+      document.write(sessionStorage.getItem("ssCustServSkills")); 
+    </script>
+  </span>
+</div>
+<br>
+<div id="theLeftTwo">
+  <span id="techSkills">
+    Technical Skills:
+  </span>
+</div>
+<div id="theRightTwo">
+  <span>
+    <script>
+      document.write(sessionStorage.getItem("ssTechSkills")); 
+    </script>
+  </span>
+</div>
+<br>
+<div id="theLeftThree">
+  <span id="writingSkills">
+    Writing Skills:
+  </span>
+</div>
+<div id="theRightThree">
+  <span>
+    <script>
+      document.write(sessionStorage.getItem("ssWritingSkills")); 
+    </script>
+  </span>
+</div>
+</body>
+</html>
